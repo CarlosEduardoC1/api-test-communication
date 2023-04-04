@@ -3,6 +3,7 @@ import fastify from "fastify";
 const app = fastify();
 
 app.get("/api/v1/ping", () => {
+  console.log("CONUMED");
   return new Date();
 });
 
